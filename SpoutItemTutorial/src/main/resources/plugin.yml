@@ -6,14 +6,27 @@ version: ${project.version}
 author: SampleAuthor
 description: ${project.description}
 commands:
-  sample:
-    description: set the sample message
-    usage: /<command> message
-    permission: sample.message
+  message:
+    description: set the greeting message
+    usage: /<command> greeting message
+    permission: SpoutItemTutorial.message
+  changeMe:
+    description: gives player new skin
+    usage: /<command>
+    permission: SpoutItemTutorial.changeMe
+  changeMeBack:
+    description: returns player's skin
+    usage: /<command>
+    permission: SpoutItemTutorial.changeMeBack
 permissions:
-  sample.*:
-    description: gives all permissions of the SamplePlugin
-    default: op
+  SpoutItemTutorial.*:
+    description: gives all permissions of the plugin commands
+    default: true
     children:
-      sample.message:
-        description: gives permission to set the sample message using the sample command
+      SpoutItemTutorial.message:
+        default: true
+      SpoutItemTutorial.changeMe:
+        default: true
+      SpoutItemTutorial.changeMeBack:
+        default: true
+        

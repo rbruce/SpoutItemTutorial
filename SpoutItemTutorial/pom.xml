@@ -5,7 +5,7 @@
   <groupId>edu.unca.rbruce</groupId>
   <artifactId>SpoutItemTutorial</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SpoutDemo</name>
+  <name>SpoutItemTutorial</name>
   <description>This is a sample plugin for Spout and Bukkit</description>
 
   <properties>
@@ -38,6 +38,12 @@
       <artifactId>spoutplugin</artifactId>
       <version>dev-SNAPSHOT</version>
     </dependency>
+   <dependency>
+		<groupId>org.bukkit</groupId>
+		<artifactId>craftbukkit</artifactId>
+		<version>1.3.2-R1.0</version>
+		<scope>compile</scope>
+	</dependency>
     <!-- Following dependency is provided by CraftBukkit -->
     <dependency>
       <groupId>com.google.guava</groupId>
